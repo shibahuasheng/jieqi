@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>我的书架</title>
+<meta http-equiv="Content-Type" content="text/html;charset=gbk" />
+<meta name="MobileOptimized" content="240"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/style/style.css" />
+<script src="/js/wap.js"></script>
+<style>
+	.bookone{ width:100%;border-bottom:1px solid #D3FEDA}
+	.bookone .case_img{width:70px;}
+	.bookone .case_last a{font-size:14px;}
+</style>
+</head>
+<body>
+<div class="header" id="_52mb_head">
+    <div class="back"><a href="javascript:history.go(-1);">返回</a></div>
+	<h1 id="_52mb_h1">我的书架</h1>
+	<div class="back_r"><a href="/">首页</a></div>
+    <script>fixwidth();</script>
+</div>
+
+{?include file="17mb/templates/top_search.html"?}
+
+{?$tips?}
+
+{?if $uid !=""?}
+ <p class="line" style="font-weight:bold;color:#000;">书架可收藏 50 本，已收藏 {?$num?} 本.</p>
+
+<div style="">
+		{?section name=i loop=$articlerows?}
+        <table class='bookone' id="{?$articlerows[i].articleid?}"><tr>
+				<td>
+					<table>
+						<tr><td class='case_name'>书名：<a href='/{?$articlerows[i].shortid?}/{?$articlerows[i].articleid?}/'><font color=>{?$articlerows[i].articlename?}</font></a></td></tr>
+						<tr><td class='case_last'>最新：<a href='/{?$articlerows[i].shortid?}/{?$articlerows[i].articleid?}/{?$articlerows[i].lastchapterid?}.html'>{?$articlerows[i].lastchapter?}</a></td></tr>
+						<tr><td class='case_shuqian'>书签：{?if $articlerows[i].bookmarkid !=""?}<a href='/{?$articlerows[i].shortid?}/{?$articlerows[i].articleid?}/{?$articlerows[i].bookmarkid?}.html'>{?$articlerows[i].bookmark?}</a>{?else?}无书签{?/if?}</td></tr>
+						<tr><td class='case_del'><a onclick='case_del({?$articlerows[i].articleid?})'><font color=red>在书架里删除本书</font></a></td></tr>
+					</table>
+				</td>
+		</tr></table>
+        {?/section?}
+</div>
+{?/if?}
+    
+{?include file="17mb/templates/foot.html"?}
+</body>
+</html>

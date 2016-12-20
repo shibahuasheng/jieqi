@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk" />
+<title>{?if $typename == ""?}排行榜_{?$_17mb_sitename?}{?else?}{?$typename?}-小说排行榜-{?$_17mb_sitename?}手机阅读{?/if?}</title>
+<meta name="keywords" content="{?if $typename != ""?}{?$typename?},推荐排行榜,排行榜,小说排行榜{?/if?}" />
+<meta name="description" content="{?if $typename != ""?}小说排行榜是{?$_17mb_sitename?}用户推举的小说排行榜，本页为{?$typename?}{?/if?}" />
+<meta name="MobileOptimized" content="240"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta http-equiv="Cache-Control" content="max-age=0" />
+<meta http-equiv="Cache-Control" content="no-transform " />
+<link rel="stylesheet" type="text/css" href="/style/style.css" />
+<script src="/js/wap.js"></script>
+</head>
+<body>
+<div class="header" id="_52mb_head">
+    <div class="back"><a href="javascript:history.go(-1);">返回</a></div>
+	<h1 id="_52mb_h1">{?if $typename !== ""?}{?$typename?}{?else?}排行榜{?/if?}</h1>
+	<div class="back_r"><a href="/">首页</a></div>
+    <script>fixwidth();</script>
+</div> 
+
+{?include file="17mb/templates/top_search.html"?}
+{?include file="17mb/templates/top_ph.html"?}
+
+<div class="cover">
+{?section name=i loop=$articlerows?}
+<p class="line"><a href="#">[{?$articlerows[i].sortname?}]</a><a href="/book/{?$articlerows[i].articleid?}/" class="blue">{?$articlerows[i].articlename?}</a>/<a href="/author/{?$articlerows[i].author?}">{?$articlerows[i].author?}</a></p>
+{?/section?}
+</div>
+
+{?$jumppage?}
+
+{?include file="17mb/templates/foot.html"?}
+
+{?if $typename != ""?}
+<script>
+function page(){
+	var p = document.getElementById("pageinput").value;
+	if(isPositiveNum(p)){window.open("/top/{?$type?}_"+p+"/","_self");}
+	function isPositiveNum(s){ 
+    var re = /^[0-9]*[1-9][0-9]*$/ ;  
+	    return re.test(s)  
+	}
+}
+document.getElementById("{?$type?}").style.cssText = "background-color:#CCCCCC";
+</script>
+{?/if?}
+</body>
+</html> 

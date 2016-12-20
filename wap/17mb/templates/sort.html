@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk" />
+<title>{?if $sortname ==""?}分类列表-{?$_17mb_sitename?}{?else?}{?$sortname?}-{?$_17mb_sitename?}{?/if?}</title>
+<meta name="keywords" content="{?if $sortname ==""?}分类列表,小说分类列表{?else?}{?$sortname?},{?$sortname?}推荐,热门{?$sortname?},{?$sortname?}分类列表{?/if?}" />
+<meta name="description" content="{?if $sortname ==""?}{?else?}{?$_17mb_sitename?}分类中{?$sortname?}的列表{?/if?}" />
+<meta name="MobileOptimized" content="240"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta http-equiv="Cache-Control" content="max-age=0" />
+<meta http-equiv="Cache-Control" content="no-transform " />
+<link rel="stylesheet" type="text/css" href="/style/style.css" />
+<script src="/js/wap.js"></script>
+</head>
+<body>
+<div class="header" id="_52mb_head">
+    <div class="back"><a href="javascript:history.go(-1);">返回</a></div>
+	<h1 id="_52mb_h1">{?if $sortname ==""?}分类列表{?else?}{?$sortname?}{?/if?}</h1>
+	<div class="back_r"><a href="/">首页</a></div>
+    <script>fixwidth();</script>
+</div> 
+{?include "17mb/templates/top_search.html"?}
+{?include "17mb/templates/top_sort.html"?}
+
+<div class="cover">
+{?section name=i loop=$articlerows?}
+<p class="line"><a href="#">[{?$sortname?}]</a><a href="/book/{?$articlerows[i].articleid?}/" class="blue">{?$articlerows[i].articlename?}</a>/<a href="/author/{?$articlerows[i].author?}">{?$articlerows[i].author?}</a></p>
+{?/section?}
+</div>
+
+{?$jumppage?}
+
+{?include "17mb/templates/foot.html"?}
+
+{?if $sortname !=""?}
+<script>
+function page(){
+	var p = document.getElementById("pageinput").value;
+	if(isPositiveNum(p)){window.open("/sort/{?$sortid?}_"+p+"/","_self");}
+	function isPositiveNum(s){ 
+    var re = /^[0-9]*[1-9][0-9]*$/ ;  
+	    return re.test(s)  
+	}
+}
+document.getElementById("s{?$sortid?}").style.cssText = "background-color:#CCCCCC";
+</script>
+{?/if?}
+
+</body>
+</html> 

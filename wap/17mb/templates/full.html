@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk" />
+<title>全本小说-{?$sitename?}手机阅读</title>
+<meta name="keywords" content="全本小说,全本小说分类列表" />
+<meta name="description" content="分类中全本小说的列表" />
+<meta name="MobileOptimized" content="240"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta http-equiv="Cache-Control" content="max-age=0" />
+<meta http-equiv="Cache-Control" content="no-transform " />
+<link rel="stylesheet" type="text/css" href="/style/style.css" />
+<script src="/js/wap.js"></script>
+</head>
+<body>
+<div class="header" id="_52mb_head">
+    <div class="back"><a href="javascript:history.go(-1);">返回</a></div>
+	<h1 id="_52mb_h1">完本小说</h1>
+	<div class="back_r"><a href="/">首页</a></div>
+    <script>fixwidth();</script>
+</div> 
+{?include file="17mb/templates/top_search.html"?}
+
+<div class="cover">
+{?section name=i loop=$articlerows?}
+<p class="line"><a href="/sort/{?$articlerows[i].sortid?}_1/">[{?$articlerows[i].sortname?}]</a><a href="/book/{?$articlerows[i].articleid?}/" class="blue">{?$articlerows[i].articlename?}</a>/<a href="/author/{?$articlerows[i].author?}">{?$articlerows[i].author?}</a></p>
+{?/section?}
+</div>
+  
+{?$jumppage?}
+
+{?include file="17mb/templates/foot.html"?}
+
+<script>    
+function page(){
+	var p = document.getElementById("pageinput").value;
+	if(isPositiveNum(p)){window.open("/full/"+p+"/","_self");}
+	function isPositiveNum(s){ 
+    var re = /^[0-9]*[1-9][0-9]*$/ ;  
+	    return re.test(s)  
+	}
+}
+</script>
+</body>
+</html>

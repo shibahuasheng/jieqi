@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>用户注册</title>
+<meta http-equiv="Content-Type" content="text/html;charset=gbk" />
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="MobileOptimized" content="240"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0, maximum-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="/style/css.css" />
+<script src="/js/wap.js"></script>
+</head>
+<body>
+
+<div class="header" id="_52mb_head">
+    <div class="back"><a href="javascript:history.go(-1);">返回</a></div>
+	<h1 id="_52mb_h1">会员注册</h1>
+	<div class="back_r"><a href="/">首页</a></div>
+    <script>fixwidth();</script>
+</div>
+
+<div class="login">
+	<div class="login_name">
+    	<div>帐号：</div>
+        <div><input id="regname" type="text"  size="20" maxlength="30"></div>
+    </div>
+    <div class="login_pass">
+    	<div>密码：</div>
+        <div><input id="regpass" size="20" maxlength="30" type="password" name="regpass"></div>
+    </div>
+	<div class="login_email">
+    	<div>邮箱：</div>
+        <div><input id="regemail" type="text"  size="20" maxlength="40"></div>
+    </div>
+    <div class="login_code">
+    	<div>验证码：</div>
+        <div><input id="_17mb_code" name="_17mb_code" class="login_name" /></div>
+        <div><img id="showcode" src="/code.php" id="img" onclick="reloadcode()" width="100px" style="vertical-align:middle"/> <a href="javascript:;" onclick="reloadcode()" class="blue">看不清，点击刷新</a></div>
+    </div>
+    <div class="login_tips"><div id="logintips"></div></div>
+    <div class="login_btn"><a href='javascript:;' onclick="register()" class="c_login_button">确认注册</a></div>
+    <div class="login_btn"><a href="/login.php" class="c_login_button">已有账号，点击登录</a></div>
+</div>
+    
+    {?include file="17mb/templates/foot.html"?}
+    
+    <script>
+		function reloadcode(){
+		var verify=document.getElementById('showcode');
+		verify.setAttribute('src','/code.php?'+Math.random());
+		}
+	</script>
+    
+</body>
+</html>

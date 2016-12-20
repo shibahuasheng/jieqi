@@ -1,0 +1,23 @@
+<div class="nav">
+    <ul>
+    	<li><a href="/sort/">分类</a></li>
+        <li><a href="/top/">排行</a></li>
+        <li><a href="/full/1/">全本</a></li>
+        <li><a href="/top/postdate_1/">新书</a></li>
+        <li><a href="/mybook.php">书架</a></li>        
+      
+        <div class="cc"></div>
+    </ul>
+</div>
+<div class="search">
+            <form name="articlesearch" method="post" action="/s.php" onsubmit="return checkInput();">  
+                <table cellpadding="0" cellspacing="0" style="width:100%;">
+                    <tr>
+                        <td style="width:50px;"><div id="type" class="type" onClick="show_search()">书名</div><select id=searchType name=type style="display:none"><option value="articlename"></option><option value="author"></option></select></td>
+                        <td style=" background-color:#fff; border:1px solid #CCC;"><input id="s_key" name="s" type="text" class="key"  onclick="this.value=''" value="输入书名或作者"/></td>
+                        <td style="width:35px; background-color:#0080C0; background-image:url('/style/search.png'); background-repeat:no-repeat; background-position:center"><input name="submit" type="submit" value="" class="go"></td>
+                    </tr>
+                </table>
+            </form>
+  </div>
+  <script>_17mb_top();</script>

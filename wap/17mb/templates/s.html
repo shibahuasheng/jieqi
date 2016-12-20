@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk" />
+<title>搜索"{?$search_key?}"结果-{?$_17mb_sitename?}手机阅读</title>
+<meta name="MobileOptimized" content="240"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta http-equiv="Cache-Control" content="max-age=0" />
+<meta http-equiv="Cache-Control" content="no-transform " />
+<link rel="stylesheet" type="text/css" href="/style/style.css" />
+<script src="/js/wap.js"></script>
+</head>
+<body>
+<div class="header" id="_52mb_head">
+    <div class="back"><a href="javascript:history.go(-1);">返回</a></div>
+	<h1 id="_52mb_h1">小说搜索</h1>
+	<div class="back_r"><a href="/">首页</a></div>
+    <script>fixwidth();</script>
+</div> 
+{?include file="17mb/templates/top_search.html"?}
+
+<div class="cover">
+  
+{?if $search_num == ""?}
+<div style='margin-left:10px;'>搜索“<font color=red>{?$search_key?}</font>”无结果</div>
+{?else?}
+<div style='margin-left:10px;'>搜索“<font color=red>{?$search_key?}</font>”结果</div>
+	{?section name=i loop=$articlerows?}
+	<p class="line"><a href="/sort/{?$articlerows[i].sortid?}_1/">[{?$articlerows[i].sortname?}]</a><a href="/book/{?$articlerows[i].articleid?}/" class="blue" target="_blank">{?$articlerows[i].articlename?}</a>/<a href="/author/{?$articlerows[i].author?}" target="_blank">{?$articlerows[i].author?}</a></p>
+    {?/section?}
+{?/if?}    
+</div>
+
+{?include file="17mb/templates/foot.html"?}
+
+</body>
+</html> 

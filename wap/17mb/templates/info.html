@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk" />
+<title>{?$articlename?}-{?$author?}-{?$sort?}-{?$_17mb_sitename?}手机阅读</title>
+<meta name="keywords" content="{?$articlename?},{?$articlename?}全文字手打,{?$articlename?}手机免费阅读,{?$articlename?}txt下载,{?$author?},{?$sort?}" />
+<meta name="description" content="{?$articlename?}是作家{?$author?}的最新作品,{?$_17mb_sitename?}提供{?$articlename?}全文字手打,{?$articlename?}手机免费阅读或下载" />
+<meta name="MobileOptimized" content="240"/>
+<meta name="applicable-device" content="mobile"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta http-equiv="Cache-Control" content="max-age=0" />
+<meta http-equiv="Cache-Control" content="no-transform " />
+<link rel="stylesheet" type="text/css" href="/style/style.css" />
+<script src="/js/wap.js"></script>
+</head>
+<body>
+<div class="header" id="_52mb_head">
+    <div class="back"><a href="javascript:history.go(-1);">返回</a></div>
+	<h1 id="_52mb_h1">{?$articlename?}</h1>
+	<div class="back_r"><a href="/">首页</a></div>
+    <script>fixwidth();</script>
+</div> 
+{?include file="17mb/templates/top_search.html"?}
+
+<div class="cover">
+  <div class="block">
+    <div class="block_img2"><img src="{?$_17mb_pcurl?}/files/article/image/{?$shortid?}/{?$articleid?}/{?$articleid?}s.jpg" border="0" width='85' height='100' onerror="this.src='/style/noimg.jpg'"/></div>
+	<div class="block_txt2">
+	<p><a ><h2>{?$articlename?}</h2></a></P>
+	<p>作者：<a href="/author/{?$author?}">{?$author?}</a></p>
+	<p>分类：<a href="/sort/{?$sortid?}_1/">{?$sortname?}</a></p>
+	<p>状态：{?$fullflag?}</p>
+	<p>更新：{?$lastupdate|date_format:"Y-m-d H:i:s"?}</p>
+	<p>最新：<a href="/{?$shortid?}/{?$articleid?}/{?$lastchapterid?}.html">{?$lastchapter?}</a></p>
+	</div>
+  </div>
+  <div style="clear:both"></div>
+<div class="ablum_read">
+	<span class="margin_right"><a href="/{?$shortid?}/{?$articleid?}/{?$firstid?}.html">开始阅读</a></span>
+	<span><a href="/{?$shortid?}/{?$articleid?}/">查看目录</a></span>
+</div>
+<div class="ablum_read">
+	<span class="margin_right">
+		<a href="javascript:;" id='shujia' onclick='shujia({?$articleid?},"{?$urlinfo?}")' style='color:#fff'>加入书架</a>
+    </span>
+	<span><a href="{?$_17mb_pcurl?}/modules/article/packdown.php?id={?$articleid?}&type=txt&fname={?$articlename|urlencode?}">点击下载</a></span>
+</div>
+<script>_17mb_middle();</script>
+<div class="intro">小说简介</div>
+<div class="intro_info">{?$intro?}</div>
+<div class="intro">最新章节预览</div>
+   <ul class="chapter">
+    {?section name=i loop=$chapter?}
+    	<li><a href="/{?$shortid?}/{?$articleid?}/{?$chapter[i].chapterid?}.html">{?$chapter[i].chaptername?}<span></span></a></li>
+    {?/section?}
+    {?$last9?}
+	</ul>
+	
+</div>
+    
+{?include file="17mb/templates/foot.html"?}
+
+</body>
+</html>

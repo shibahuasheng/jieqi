@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk" />
+<title>{?$chaptername?}是{?$articlename?}最新更新章节-TXT全集下载-{?$_17mb_sitename?}手机阅读</title>
+<meta name="keywords" content="{?$articlename?},{?$chaptername?}txt手打全文字,{?$articlename?}TXT下载,{?$articlename?}最新更新" />
+<meta name="description" content="{?$articlename?}是由作家{?$author?}所作,本书属于,本书由{?$_17mb_sitename?}的会员收集于网络,供书友们及时阅读和下载到{?$articlename?}最新更新手打全文字TXT章节。" />
+<meta name="MobileOptimized" content="240"/>
+<meta name="applicable-device" content="mobile"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta http-equiv="Cache-Control" content="max-age=0" />
+<meta http-equiv="Cache-Control" content="no-transform " />
+<link rel="stylesheet" type="text/css" href="/style/css.css" />
+<script src="/js/wap.js"></script>
+<script type="text/javascript" src="/js/yuedu.js"></script> 
+</head>
+<body id="nr_body" class="nr_all c_nr">
+<div class="header" id="_52mb_head">
+    <div class="back"><a href="javascript:history.go(-1);">返回</a></div>
+	<h1 id="_52mb_h1">{?$articlename?}</h1>
+	<div class="back_r"><a href="/">首页</a></div>
+    <script>fixwidth();</script>
+</div>
+<script>_17mb_top();</script>
+<div>
+	<div class="nr_set">
+    	<div id="lightdiv" class="set1" onclick="nr_setbg('light')">关灯</div>
+        <div id="huyandiv" class="set1" onclick="nr_setbg('huyan')">护眼</div>
+        <div class="set2"><div>字体：</div><div id="fontbig" onclick="nr_setbg('big')">大</div> <div id="fontmiddle" onclick="nr_setbg('middle')" >中</div> <div id="fontsmall" onclick="nr_setbg('small')">小</div></div>
+		<div class="cc"></div>
+    </div>
+	
+	<div class="nr_title" id="nr_title">
+    	{?$chaptername?}
+    </div>
+	
+    <div class="nr_page">
+    	 <table cellpadding="0" cellspacing="0">
+            <tr>
+            	<td class="prev">
+                	<a id='pt_prev' onclick='shuqian({?$articleid?},{?$chapterid?},"{?$urlchapter?}")'><font>&nbsp;&nbsp;&nbsp;存书签</font></a>
+                </td>
+                <td class="mulu"><a id="pt_mulu" href="/mybook.php">书架管理</a></td>
+                <td class="next"><a id="pt_next" href="/{?$shortid?}/{?$articleid?}/">返回目录</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="nr" class="nr_nr">
+    	<div id="nr1">{?$_17mb_content?}</div>
+    </div>
+
+    <div class="nr_page">
+    	 <table cellpadding="0" cellspacing="0">
+             <tr>
+            	<td class="prev"><a id="pb_prev" href="{?if $preview_chapterid != ""?}/{?$shortid?}/{?$articleid?}/{?$preview_chapterid?}.html{?else?}/{?$shortid?}/{?$articleid?}/{?/if?}">上一章</a></td>
+                <td class="mulu"><a id="pb_mulu" href="/{?$shortid?}/{?$articleid?}/">目录</a></td>
+                <td class="next"><a id="pb_next" href="{?if $next_chapterid != ""?}/{?$shortid?}/{?$articleid?}/{?$next_chapterid?}.html{?else?}/{?$shortid?}/{?$articleid?}/{?/if?}">下一章</a></td>
+            </tr>
+        </table>
+    </div>
+    <br/>
+	{?include file="17mb/templates/foot.html"?} 
+</div>
+<div class="tfanye" onclick="tfanye()"></div>
+<div class="bfanye" onclick="bfanye()"></div>
+<script>getset()</script>
+<script type="text/javascript">
+var lastread=new LastRead();lastread.set('{?$articleid?}', '{?$chapterid?}', '{?$articlename?}', '{?$chaptername?}');
+</script>
+</body>
+</html>

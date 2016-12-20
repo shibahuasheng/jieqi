@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk" />
+<title>{?$_17mb_sitename?}手机阅读-最新更新手打TXT下载和手机免费阅读</title>
+<meta name="keywords" content="{?$_17mb_sitename?},{?$_17mb_sitename?},手机免费阅读,全文字,手打,txt,txt下载,最新更新" />
+<meta name="description" content="{?$_17mb_sitename?}收集了网络热门小说的最新更新手打全文字TXT章节供您手机免费阅读和下载,请收藏{?$_17mb_sitename?}。" />
+<meta name="MobileOptimized" content="240"/>
+<meta name="applicable-device" content="mobile"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta http-equiv="Cache-Control" content="max-age=300" />
+<meta http-equiv="Cache-Control" content="no-transform " />
+<link rel="stylesheet" type="text/css" href="/style/style.css" />
+<script src="/js/wap.js"></script>
+</head>
+<body>
+      <div class="header">
+    <div class="logo"><a href="">{?$_17mb_sitename?}</a></div>
+    <div class="reg"><div id="login_top">{?$jieqi_username?}
+	<script>document.writeln("<a class='login_topbtn c_index_login' href=\"\/login.php?url=" + encodeURIComponent(document.URL) + "\">登录<\/a><a href='/register.php' class='login_topbtn c_index_login' >注册<\/a>&nbsp;&nbsp;")</script>
+	<script>showlogin()</script></div>
+</div>
+</div>
+<div id="info" class="login_top" style="display:none"><a href='/mybook.php' style="color:#fff;">我的书架</a>&nbsp;&nbsp;&nbsp;<a href="javascript:;" onclick="logout()" style="color:#fff">退出</a></div>
+
+{?include file="17mb/templates/top_search.html"?} 
+
+    <div class="article">
+        <h2 class="title"><span>阅读记录</span></h2>
+        <script type="text/javascript" src="/js/yuedu.js"></script> 
+            <div class="block">
+				<div id="banner"></div>
+				<script type="text/javascript">yuedu();</script>
+            </div>
+    </div>
+
+      <script>qijixs_top()</script>
+
+
+    <div class="article">
+	<h2 class="title"><span><a href="/top/weekvisit_1/">点击排行</a></span><a href="/top/weekvisit_1/">更多...</a></h2>
+		   
+        <div class="block">
+            <div class="block_img"><a href="/book/{?$allvisit.0.articleid?}/"><img height=100 width=80 src='{?$_17mb_pcurl?}/files/article/image/{?$allvisit.0.shortid?}/{?$allvisit.0.articleid?}/{?$allvisit.0.articleid?}s.jpg'  onerror="this.src='/style/noimg.jpg'"/></a></div>
+            <div class="block_txt">
+            <p><a href="/book/{?$allvisit.0.articleid?}/"><h2>{?$allvisit.0.articlename?}</h2></a></p>
+            <p>作者：<a href="/author/{?$allvisit.0.author?}">{?$allvisit.0.author?}</a></p>
+            <p><a href="/book/{?$allvisit.0.articleid?}/">{?$allvisit.0.intro?}...</a></p>
+            </div>
+            <div style="clear:both"></div>
+            <ul>
+                <li><a href="/sort/{?$allvisit.1.sortid?}_1/">[{?$allvisit.1.sortname?}]</a><a href="/book/{?$allvisit.1.articleid?}/" class="blue">{?$allvisit.1.articlename?}</a>/<a href="/author/{?$allvisit.1.author?}">{?$allvisit.1.author?}</a></li>
+                <li><a href="/sort/{?$allvisit.2.sortid?}_1/">[{?$allvisit.2.sortname?}]</a><a href="/book/{?$allvisit.2.articleid?}/" class="blue">{?$allvisit.2.articlename?}</a>/<a href="/author/{?$allvisit.2.author?}">{?$allvisit.2.author?}</a></li>
+                <li><a href="/sort/{?$allvisit.3.sortid?}_1/">[{?$allvisit.3.sortname?}]</a><a href="/book/{?$allvisit.3.articleid?}/" class="blue">{?$allvisit.3.articlename?}</a>/<a href="/author/{?$allvisit.3.author?}">{?$allvisit.3.author?}</a></li>
+                <li><a href="/sort/{?$allvisit.4.sortid?}_1/">[{?$allvisit.4.sortname?}]</a><a href="/book/{?$allvisit.4.articleid?}/" class="blue">{?$allvisit.4.articlename?}</a>/<a href="/author/{?$allvisit.4.author?}">{?$allvisit.4.author?}</a></li>
+                <li><a href="/sort/{?$allvisit.5.sortid?}_1/">[{?$allvisit.5.sortname?}]</a><a href="/book/{?$allvisit.5.articleid?}/" class="blue">{?$allvisit.5.articlename?}</a>/<a href="/author/{?$allvisit.5.author?}">{?$allvisit.5.author?}</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="article">
+	<h2 class="title"><span><a href="/top/weekvote_1/">推荐排行</a></span><a href="/top/weekvote_1/">更多...</a></h2>
+   <div class="block">
+            <div class="block_img"><a href="/book/{?$allvote.0.articleid?}/"><img height=100 width=80 src='{?$_17mb_pcurl?}/files/article/image/{?$allvote.0.shortid?}/{?$allvote.0.articleid?}/{?$allvote.0.articleid?}s.jpg'  onerror="this.src='/style/noimg.jpg'"/></a></div>
+            <div class="block_txt">
+            <p><a href="/book/{?$allvote.0.articleid?}/"><h2>{?$allvote.0.articlename?}</h2></a></p>
+            <p>作者：<a href="/author/{?$allvote.0.author?}">{?$allvote.0.author?}</a></p>
+            <p><a href="/book/{?$allvote.0.articleid?}/">{?$allvote.0.intro?}...</a></p>
+            </div>
+            <div style="clear:both"></div>
+            <ul>
+                <li><a href="/sort/{?$allvote.1.sortid?}_1/">[{?$allvote.1.sortname?}]</a><a href="/book/{?$allvote.1.articleid?}/" class="blue">{?$allvote.1.articlename?}</a>/<a href="/author/{?$allvote.1.author?}">{?$allvote.1.author?}</a></li>
+                <li><a href="/sort/{?$allvote.2.sortid?}_1/">[{?$allvote.2.sortname?}]</a><a href="/book/{?$allvote.2.articleid?}/" class="blue">{?$allvote.2.articlename?}</a>/<a href="/author/{?$allvote.2.author?}">{?$allvote.2.author?}</a></li>
+                <li><a href="/sort/{?$allvote.3.sortid?}_1/">[{?$allvote.3.sortname?}]</a><a href="/book/{?$allvote.3.articleid?}/" class="blue">{?$allvote.3.articlename?}</a>/<a href="/author/{?$allvote.3.author?}">{?$allvote.3.author?}</a></li>
+                <li><a href="/sort/{?$allvote.4.sortid?}_1/">[{?$allvote.4.sortname?}]</a><a href="/book/{?$allvote.4.articleid?}/" class="blue">{?$allvote.4.articlename?}</a>/<a href="/author/{?$allvote.4.author?}">{?$allvote.4.author?}</a></li>
+                <li><a href="/sort/{?$allvote.5.sortid?}_1/">[{?$allvote.5.sortname?}]</a><a href="/book/{?$allvote.5.articleid?}/" class="blue">{?$allvote.5.articlename?}</a>/<a href="/author/{?$allvote.5.author?}">{?$allvote.5.author?}</a></li>
+            </ul>
+        </div>     
+    </div>
+	<script>_17mb_middle();</script>
+    <div class="article">
+	<h2 class="title"><span><a href="/top/goodnum_1/">收藏排行</a></span><a href="/top/goodnum_1/">更多...</a></h2>
+		<div class="block">
+            <div class="block_img"><a href="/book/{?$goodnum.0.articleid?}/"><img height=100 width=80 src='{?$_17mb_pcurl?}/files/article/image/{?$goodnum.0.shortid?}/{?$goodnum.0.articleid?}/{?$goodnum.0.articleid?}s.jpg'  onerror="this.src='/style/noimg.jpg'"/></a></div>
+            <div class="block_txt">
+            <p><a href="/book/{?$goodnum.0.articleid?}/"><h2>{?$goodnum.0.articlename?}</h2></a></p>
+            <p>作者：<a href="/author/{?$goodnum.0.author?}">{?$goodnum.0.author?}</a></p>
+            <p><a href="/book/{?$goodnum.0.articleid?}/">{?$goodnum.0.intro?}...</a></p>
+            </div>
+            <div style="clear:both"></div>
+            <ul>
+                <li><a href="/sort/{?$goodnum.1.sortid?}_1/">[{?$goodnum.1.sortname?}]</a><a href="/book/{?$goodnum.1.articleid?}/" class="blue">{?$goodnum.1.articlename?}</a>/<a href="/author/{?$goodnum.1.author?}">{?$goodnum.1.author?}</a></li>
+                <li><a href="/sort/{?$goodnum.2.sortid?}_1/">[{?$goodnum.2.sortname?}]</a><a href="/book/{?$goodnum.2.articleid?}/" class="blue">{?$goodnum.2.articlename?}</a>/<a href="/author/{?$goodnum.2.author?}">{?$goodnum.2.author?}</a></li>
+                <li><a href="/sort/{?$goodnum.3.sortid?}_1/">[{?$goodnum.3.sortname?}]</a><a href="/book/{?$goodnum.3.articleid?}/" class="blue">{?$goodnum.3.articlename?}</a>/<a href="/author/{?$goodnum.3.author?}">{?$goodnum.3.author?}</a></li>
+                <li><a href="/sort/{?$goodnum.4.sortid?}_1/">[{?$goodnum.4.sortname?}]</a><a href="/book/{?$goodnum.4.articleid?}/" class="blue">{?$goodnum.4.articlename?}</a>/<a href="/author/{?$goodnum.4.author?}">{?$goodnum.4.author?}</a></li>
+                <li><a href="/sort/{?$goodnum.5.sortid?}_1/">[{?$goodnum.5.sortname?}]</a><a href="/book/{?$goodnum.5.articleid?}/" class="blue">{?$goodnum.5.articlename?}</a>/<a href="/author/{?$goodnum.5.author?}">{?$goodnum.5.author?}</a></li>
+            </ul>
+        </div>      
+    </div>
+
+    <div class="article">
+	<h2 class="title"><span><a href="/top/postdate_1/">新书上架</a></span><a href="/top/postdate_1/">更多...</a></h2>
+		<div class="block">
+            <div class="block_img"><a href="/book/{?$postdate.0.articleid?}/"><img height=100 width=80 src='{?$_17mb_pcurl?}/files/article/image/{?$postdate.0.shortid?}/{?$postdate.0.articleid?}/{?$postdate.0.articleid?}s.jpg'  onerror="this.src='/style/noimg.jpg'"/></a></div>
+            <div class="block_txt">
+            <p><a href="/book/{?$postdate.0.articleid?}/"><h2>{?$postdate.0.articlename?}</h2></a></p>
+            <p>作者：<a href="/author/{?$postdate.0.author?}">{?$postdate.0.author?}</a></p>
+            <p><a href="/book/{?$postdate.0.articleid?}/">{?$postdate.0.intro?}...</a></p>
+            </div>
+            <div style="clear:both"></div>
+            <ul>
+                <li><a href="/sort/{?$postdate.1.sortid?}_1/">[{?$postdate.1.sortname?}]</a><a href="/book/{?$postdate.1.articleid?}/" class="blue">{?$postdate.1.articlename?}</a>/<a href="/author/{?$postdate.1.author?}">{?$postdate.1.author?}</a></li>
+                <li><a href="/sort/{?$postdate.2.sortid?}_1/">[{?$postdate.2.sortname?}]</a><a href="/book/{?$postdate.2.articleid?}/" class="blue">{?$postdate.2.articlename?}</a>/<a href="/author/{?$postdate.2.author?}">{?$postdate.2.author?}</a></li>
+                <li><a href="/sort/{?$postdate.3.sortid?}_1/">[{?$postdate.3.sortname?}]</a><a href="/book/{?$postdate.3.articleid?}/" class="blue">{?$postdate.3.articlename?}</a>/<a href="/author/{?$postdate.3.author?}">{?$postdate.3.author?}</a></li>
+                <li><a href="/sort/{?$postdate.4.sortid?}_1/">[{?$postdate.4.sortname?}]</a><a href="/book/{?$postdate.4.articleid?}/" class="blue">{?$postdate.4.articlename?}</a>/<a href="/author/{?$postdate.4.author?}">{?$postdate.4.author?}</a></li>
+                <li><a href="/sort/{?$postdate.5.sortid?}_1/">[{?$postdate.5.sortname?}]</a><a href="/book/{?$postdate.5.articleid?}/" class="blue">{?$postdate.5.articlename?}</a>/<a href="/author/{?$postdate.5.author?}">{?$postdate.5.author?}</a></li>
+            </ul>
+        </div>   
+    </div>
+
+    <div class="article">
+	<h2 class="title"><span><a href="/top/lastupdate_1/">最近更新</a></span><a href="/top/lastupdate_1/">更多...</a></h2>
+		<div class="block">
+            <div class="block_img"><a href="/book/{?$lastupdate.0.articleid?}/"><img height=100 width=80 src='{?$_17mb_pcurl?}/files/article/image/{?$lastupdate.0.shortid?}/{?$lastupdate.0.articleid?}/{?$lastupdate.0.articleid?}s.jpg'  onerror="this.src='/style/noimg.jpg'"/></a></div>
+            <div class="block_txt">
+            <p><a href="/book/{?$lastupdate.0.articleid?}/"><h2>{?$lastupdate.0.articlename?}</h2></a></p>
+            <p>作者：<a href="/author/{?$lastupdate.0.author?}">{?$lastupdate.0.author?}</a></p>
+            <p><a href="/book/{?$lastupdate.0.articleid?}/">{?$lastupdate.0.intro?}...</a></p>
+            </div>
+            <div style="clear:both"></div>
+            <ul>
+                <li><a href="/sort/{?$lastupdate.1.sortid?}_1/">[{?$lastupdate.1.sortname?}]</a><a href="/book/{?$lastupdate.1.articleid?}/" class="blue">{?$lastupdate.1.articlename?}</a>/<a href="/author/{?$lastupdate.1.author?}">{?$lastupdate.1.author?}</a></li>
+                <li><a href="/sort/{?$lastupdate.2.sortid?}_1/">[{?$lastupdate.2.sortname?}]</a><a href="/book/{?$lastupdate.2.articleid?}/" class="blue">{?$lastupdate.2.articlename?}</a>/<a href="/author/{?$lastupdate.2.author?}">{?$lastupdate.2.author?}</a></li>
+                <li><a href="/sort/{?$lastupdate.3.sortid?}_1/">[{?$lastupdate.3.sortname?}]</a><a href="/book/{?$lastupdate.3.articleid?}/" class="blue">{?$lastupdate.3.articlename?}</a>/<a href="/author/{?$lastupdate.3.author?}">{?$lastupdate.3.author?}</a></li>
+                <li><a href="/sort/{?$lastupdate.4.sortid?}_1/">[{?$lastupdate.4.sortname?}]</a><a href="/book/{?$lastupdate.4.articleid?}/" class="blue">{?$lastupdate.4.articlename?}</a>/<a href="/author/{?$lastupdate.4.author?}">{?$lastupdate.4.author?}</a></li>
+                <li><a href="/sort/{?$lastupdate.5.sortid?}_1/">[{?$lastupdate.5.sortname?}]</a><a href="/book/{?$lastupdate.5.articleid?}/" class="blue">{?$lastupdate.5.articlename?}</a>/<a href="/author/{?$lastupdate.5.author?}">{?$lastupdate.5.author?}</a></li>
+            </ul>
+        </div>
+    </div>
+
+	<script>qijixs_bottom()</script>
+    
+    {?include file="17mb/templates/foot.html"?}
+	
+</body>
+</html> 
+
