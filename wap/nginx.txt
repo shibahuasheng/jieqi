@@ -1,0 +1,14 @@
+rewrite ^/top/$ /top.php;
+rewrite ^/top/([a-z]+)_([0-9]+)/$ /top.php?type=$1&page=$2;
+rewrite ^/sort/$ /sort.php;
+rewrite ^/sort/([0-9]+)_([0-9]+)/$ /sort.php?sortid=$1&page=$2;
+rewrite ^/full/$ /full.php?page=1;
+rewrite ^/full/([0-9]+)/$ /full.php?page=$1;
+rewrite ^/book/([0-9]+)/$ /info.php?aid=$1;
+rewrite ^/([0-9]+)/([0-9]+)/$ /chapterlist.php?aid=$1&page=$2;
+rewrite ^/([0-9]+)/([0-9]+)_([0-9]+)/$ /chapterlist.php?aid=$2&page=$3;
+rewrite ^/([0-9]+)/([0-9]+)_([0-9]+)_1/$ /chapterlist.php?aid=$2&page=$3&desc=1;
+rewrite ^/([0-9]+)/([0-9]+)/([0-9]+)\.html$ /chapter.php?aid=$2&cid=$3;
+rewrite ^/author/(.*)$ /author.php?author=$1;
+rewrite ^/17mb/templates/$ /404.html;
+rewrite ^/17mb/templates/(.*)$ /404.html;

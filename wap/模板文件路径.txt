@@ -1,0 +1,9 @@
+首页：index.html
+分类：sort.html
+排行：top.html
+全本：full.html
+信息页：info.html
+目录页：chapterlist.html
+内容页：chapter.html
+搜索：s.html
+书架：mybook.html
