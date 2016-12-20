@@ -13,3 +13,9 @@ files ------ 用户上传或者网站程序生成文件保存的目录，可在�
 访问 http://www.domain.com/install/index.php 进行安装<br/>
 安装软件会自行创建数据库<br/>
 安装完成后请删除 install 目录！<br/>
+chown -R nobody:nobody html/jieqi<br/>
+chown -R nobody:nobody html/jieqi/*<br/>
+chmod -R 777 html/jieqi/cache<br/>
+chmod -R 777 html/jieqi/configs<br/>
+chmod -R 777 html/jieqi/files<br/>
+chmod -R 777 html/jieqi/compiled<br/>
