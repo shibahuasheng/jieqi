@@ -19,3 +19,6 @@ chmod -R 777 html/jieqi/cache<br/>
 chmod -R 777 html/jieqi/configs<br/>
 chmod -R 777 html/jieqi/files<br/>
 chmod -R 777 html/jieqi/compiled<br/>
+<br/>
+<br/>
+git clone https://github.com/max2max/jieqi.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
