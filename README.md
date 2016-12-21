@@ -22,3 +22,5 @@ chmod -R 777 files<br/>
 chmod -R 777 compiled<br/>
 chmod -R 777 configs<br/>
 chmod -R 777 cache<br/>
+对于小说网站，同样需要添加权限<br/>
+chmod -R 777 cache_c
