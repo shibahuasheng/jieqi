@@ -21,4 +21,6 @@ chmod -R 777 html/jieqi/files<br/>
 chmod -R 777 html/jieqi/compiled<br/>
 <br/>
 <br/>
-git clone https://github.com/max2max/jieqi.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard
+cd 网站根目录<br/>
+git clone https://github.com/max2max/jieqi.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard<br/>
+chmod www:www *
