@@ -17,4 +17,8 @@ files ------ 用户上传或者网站程序生成文件保存的目录，可在�
 <br/>
 cd 网站根目录<br/>
 git clone https://github.com/max2max/jieqi.git tmp && mv tmp/.git . && rm -rf tmp && git reset --hard<br/>
-chmod www:www *
+chmod www:www *<br/>
+chmod -R 777 files<br/>
+chmod -R 777 compiled<br/>
+chmod -R 777 configs<br/>
+chmod -R 777 cache<br/>
